@@ -1,0 +1,10 @@
+<div class="container" style="text-align: left;">
+    <div class="row">
+        <div class="col-xs-12">
+            <h3><i>Employee Details</i></h3>
+            <ul>
+                <li (click)="onSelect(employee)" *ngFor="let employee of employees">{{employee.id}} - {{employee.employeeName}} - {{employee.salary}} - {{employee.departmentID}} - {{employee.managerName}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
